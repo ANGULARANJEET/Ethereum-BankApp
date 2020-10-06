@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bla Bla Bank</title>
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Bla Bla Bank</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Bla Bla Bank</h1>
+        <p>Welcome to Bla Bla Bank! Secured transactions using Blockchain Technology.</p>
+        <p>Powered by Ethereum<p>
+        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-3">
+          <h2>Balance: </h2>
+          <p>Current available balance.</p>
+          <hr>
+          <lable><strong>Rs.</strong></lable>
+          <label id="balance"></label>
+          <br>
+          <br>
+        </div>
+        <hr>
+        <div class="col-md-6">
+          <h2>Transactions:</h2>
+          <p>Perform your transactions here.</p>
+          <hr>
+          <div class="form-group">
+              <label>Deposit: </label>
+              <div class="input-group">
+                  <div class="input-group-append">
+                      <input type="text" class="form-control" id="depositAmt" placeholder="Enter deposit amount">
+                      <input type="button" id="deposit" value="Deposit" class="btn btn-primary">
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
+              <label>Withdrawal: </label>
+              <div class="input-group">
+                  <div class="input-group-append">
+                      <input type="text" class="form-control" id="withdrawAmt" placeholder="Enter withdrawal amount">
+                      <input type="button" id="withdraw" value="Withdraw" class="btn btn-primary">
+                  </div>
+              </div>
+          </div>   
+      </div>
+    <hr>
+
+   <footer class="footer">
+    <p>&copy; BlaBla-Bank Application 2020-2021. Powered by Ethereum</p>
+  </footer>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.33/dist/web3.min.js"></script>
+   <script src="./js/app.js"></script>
+</body>
+</html> 
